@@ -1,0 +1,33 @@
+<div class="page-container">
+
+
+    <div class="headLabel">
+      <h3> Sort the numbers in Descending Order  .</h3>
+    </div>
+    <div class="difficulty-level">
+       <div class="buttons">
+        <button mat-raised-button color="" (click)="changeDifficultyLevel('easy')">Easy</button>
+        <button mat-raised-button color="" (click)="changeDifficultyLevel('medium')">Medium</button>
+        <button mat-raised-button color="" (click)="changeDifficultyLevel('little-hard')">Little Hard</button>
+      </div>
+      </div>
+    <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+      <div class="example-box" id="asc-{{number}}-{{i}}" *ngFor="let number of numberList;let i = index" cdkDrag>{{number}}</div>
+    </div>
+    <div class="controls">
+      <div class="buttons">
+      <button mat-raised-button color="primary" (click)='checkDescendingOrder()'>Check Answer</button>
+      <button mat-raised-button color="warn" (click)="resetTheOrder()">Reset</button>
+    </div>
+    </div>
+    <!-- <div class="grades" *ngIf="viewGrade">
+            <div class="grades-container">
+                <i class="material-icons" *ngFor="let star of stars">
+                    grade
+                    </i>
+                 <p>{{gradeStatement}}</p>   
+            </div>
+           
+    </div> -->
+    </div>
+    

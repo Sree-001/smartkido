@@ -1,0 +1,21 @@
+<!-- <mat-card>   -->
+  <!-- <h1 mat-dialog-title> {{data.statement}}</h1> -->
+  <div mat-dialog-content>
+  
+    <div class="grades" >
+      <div class="grades-container">
+        <p>{{data.statement}}</p>
+         <i class="material-icons" *ngFor="let star of data.stars">
+              grade
+              </i>
+           
+      </div>
+      
+  </div>
+  </div>
+  <div mat-dialog-actions>
+    <!-- <button mat-button (click)="onNoClick()">Cancel</button> -->
+    <button mat-button [mat-dialog-close]="data.gradeStatement" cdkFocusInitial>Ok</button>
+  </div>
+
+<!-- </mat-card> -->

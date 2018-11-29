@@ -1,0 +1,13 @@
+.grades{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size:24px;
+    font-family: FredokaOne-Regular;
+  }
+  
+  .grades-container .material-icons{
+    color:gold;
+    font-size: 54px;
+  }

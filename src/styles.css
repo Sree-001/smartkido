@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* 
+*{
+    padding:0px;
+    margin: 0px;
+} */
+@font-face {
+    font-family: Cabin_Sketch_Bold;
+    src: url(../src/assets/fonts/Cabin_Sketch/CabinSketch-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Cabin_Sketch_Regular;
+    src: url(../src/assets/fonts/Cabin_Sketch/CabinSketch-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: CreteRound-Regular;
+    src: url(../src/assets/fonts/Crete_Round/CreteRound-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: CreteRound-Italic;
+    src: url(../src/assets/fonts/Crete_Round/CreteRound-Italic.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Fenix-Regular;
+    src: url(../src/assets/fonts/Fenix/Fenix-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: FredokaOne-Regular;
+    src: url(../src/assets/fonts/Fredoka_One/FredokaOne-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: IndieFlower;
+    src: url(../src/assets/fonts/Indie_Flower/IndieFlower.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Milonga-Regular;
+    src: url(../src/assets/fonts/Milonga/Milonga-Regular.ttf) format("truetype");
+  }

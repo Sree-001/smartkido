@@ -1,0 +1,14 @@
+h1 {
+    font-family: Cabin_Sketch_Regular;
+    font-size: 7em;
+}
+#home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    /* background: url(../../../assets/background-images/background3.jpg); */
+    background-color: rgba(32, 178, 171, 0.288);
+    background-blend-mode:multiply;
+    height: 93vh;
+}

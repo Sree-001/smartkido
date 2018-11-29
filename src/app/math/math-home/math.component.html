@@ -1,0 +1,12 @@
+
+<div class="math-container">
+        <button mat-button [matMenuTriggerFor]="menu">Math <mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+         <a routerLink="ordering"> <button mat-menu-item>Ordering </button></a>
+         <a routerLink="zero"> <button mat-menu-item> Zero </button></a>
+        </mat-menu>
+        
+
+</div>
+<router-outlet > </router-outlet>
+
