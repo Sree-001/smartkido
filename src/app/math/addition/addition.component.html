@@ -1,0 +1,34 @@
+<mat-card>
+  <h3>Addition </h3>
+  <div class="addition-container">
+  
+    <div class="left-box">
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Type a number" name="inputField" [(ngModel)]="inputField" #inputNumber   value="" type="number">
+            </mat-form-field>
+          </form>
+    </div>
+    <div class="middle-box">
+    <div class="middle-container">
+      <button mat-raised-button  (click)="pushItem(inputNumber.value)"> <span style="font-size:48px">+</span>   </button>
+      <button mat-fab  style="font-size: 30px;background-color:midnightblue"> 
+        {{projectorArr.length}}
+      </button>     
+    </div>
+    </div>
+    <div class="right-box">
+      <mat-card>  
+      <div class="projector-box">
+         
+          <div *ngFor="let item of projectorArr"  class="projector-item">
+          
+            <mat-icon >sentiment_very_satisfied</mat-icon>
+          
+          </div> 
+        </div>
+      </mat-card>  
+     
+      </div>
+  </div>
+</mat-card>

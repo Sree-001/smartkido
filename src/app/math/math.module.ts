@@ -8,9 +8,10 @@ import { OrderingComponent } from './ordering/ordering.component';
 import { AscendingComponent } from './ordering/ascending/ascending.component';
 import { DescendingComponent } from './ordering/descending/descending.component';
 import { ZeroComponent } from './zero/zero.component';
+import { AdditionComponent } from './addition/addition.component';
 // import{SharedModuleModule}
 @NgModule({
-  declarations: [MathComponent, OrderingComponent, AscendingComponent, DescendingComponent, ZeroComponent],
+  declarations: [MathComponent, OrderingComponent, AscendingComponent, DescendingComponent, ZeroComponent, AdditionComponent],
   imports: [
     CommonModule,
     MathRoutingModule,
