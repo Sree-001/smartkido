@@ -1,0 +1,45 @@
+<div class="demo-2-container">
+  <div class="left">
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="1st Number" type='number' id="firstArr" #first (keyup)="inputChangeHandler(first.id)"
+          [(ngModel)]="firstInp" name="firstInp"
+          >
+        </mat-form-field>
+        <mat-card class="wrapperCard">
+   <div class="itemsHolder">
+     <div  *ngFor = "let x of firstArr"  class="item">
+       <mat-icon>local_florist</mat-icon>
+     </div>
+   </div>
+  </mat-card>
+  </div>
+  <div class="middle"> 
+    <button  mat-raised-button style="font-size:32px;margin-left: -5em;
+    margin-right: 2em;"  (click)="addItemsToResult()"> + </button>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="2nd Number" type='number'  #second id="secondArr"  #second (keyup)="inputChangeHandler(second.id)"
+      [(ngModel)]="secondInp" name="secondInp">
+    </mat-form-field>
+    <mat-card class="wrapperCard">
+    <div class="itemsHolder">
+        <div  *ngFor = "let y of secondArr"  class="item">
+            <mat-icon>local_florist</mat-icon>
+          </div>
+    </div>
+    </mat-card>
+  </div>
+  
+  <div class="right">
+     <button  mat-raised-button style="margin-right:2em;font-size:32px"  > = </button>
+     <mat-form-field class="example-full-width">
+        <input matInput placeholder="Result"value={{resultArr.length}} disabled>
+      </mat-form-field>
+      <mat-card class="wrapperCard">
+          <div class="itemsHolder">
+              <div  *ngFor = "let y of resultArr"  class="item">
+                  <mat-icon>local_florist</mat-icon>
+                </div>
+          </div>
+          </mat-card>
+  </div>
+</div>

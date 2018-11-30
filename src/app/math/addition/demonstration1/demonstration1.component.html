@@ -1,0 +1,40 @@
+<mat-card>
+    <div class="addition-container">
+  
+    <div class="left-box">
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Type a number"  min=0 name="inputField" [(ngModel)]="inputField" #inputNumber   value="" type="number">
+            </mat-form-field>
+          </form>
+    </div>
+    <div class="middle-box">
+    <div class="middle-container">
+      <button mat-raised-button  (click)="pushItem(inputNumber.value)"> <span style="font-size:48px">+</span>   </button>
+      <button mat-fab  style="font-size: 30px;background-color:midnightblue"> 
+        {{projectorArr.length}}
+      </button>     
+    </div>
+    <div class="middle-container" style="margin-top:2em">
+        <button mat-raised-button (click)="emptyItems()" > Reset  <mat-icon>replay</mat-icon> </button>
+        
+      </div>
+
+
+    </div>
+    <div class="right-box">
+      <mat-card>  
+      <div class="projector-box">
+         
+          <div *ngFor="let item of projectorArr"  class="projector-item">
+          
+            <mat-icon >sentiment_very_satisfied</mat-icon>
+          
+          </div> 
+        </div>
+      </mat-card>  
+     
+      </div>
+  </div>
+  <p>...</p>
+</mat-card>
