@@ -77,6 +77,10 @@ export class DescendingComponent implements OnInit {
 // Switching the Difficulty Level
 
   changeDifficultyLevel(levelKey) {
+    if (this.numberList.length > 0) {
+      this.resetTheOrder();
+   }
+   
     if (levelKey === 'easy' ) {
          let numbers = [] ;
          for (let i = 0; i < 4 ; i++) {

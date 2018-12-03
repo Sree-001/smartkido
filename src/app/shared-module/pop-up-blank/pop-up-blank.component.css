@@ -1,0 +1,21 @@
+.symbols .stars{
+    color:goldenrod;
+    text-align: center;
+    margin-right: 0.5em;
+    font-size: 3em;
+}
+.dialog-container{
+    text-align: center;
+}
+.pop-message{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+
+.warn{
+    color:tomato;
+    text-align: center;
+    /* margin-right: 0.5em; */
+    font-size: 3em;
+}

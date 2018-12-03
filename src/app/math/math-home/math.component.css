@@ -1,4 +1,6 @@
 .math-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* background-color: slategray; */
+    /* height: 3em; */
 }

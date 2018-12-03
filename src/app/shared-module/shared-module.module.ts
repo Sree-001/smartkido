@@ -17,8 +17,9 @@ import { MatIconModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { PopupComponent } from './popup/popup.component';
+import { PopUpBlankComponent } from './pop-up-blank/pop-up-blank.component';
 @NgModule({
-  declarations: [PopupComponent],
+  declarations: [PopupComponent, PopUpBlankComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -57,6 +58,6 @@ import { PopupComponent } from './popup/popup.component';
     MatMenuModule,
     MatTreeModule
   ],
-  entryComponents:[PopupComponent]
+  entryComponents:[PopupComponent, PopUpBlankComponent]
 })
 export class SharedModuleModule { }

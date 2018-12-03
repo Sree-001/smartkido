@@ -1,0 +1,21 @@
+
+<div mat-dialog-content>
+  <div class="dialog-container">
+    <div *ngIf="data.message === 'Excellent' " class="symbols">
+      <mat-icon class="stars">star</mat-icon>
+      <mat-icon class="stars">star</mat-icon>
+      <mat-icon class="stars">star</mat-icon>
+    </div>
+    <div class="symbols" *ngIf="data.message === 'Try Once More' " >
+      <mat-icon class="warn">warning</mat-icon>
+    </div>
+    <div class="pop-message">
+      <p>{{data.message}}</p>
+    </div>
+  </div>
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Ok</button>
+  <!-- <button mat-button  cdkFocusInitial>Ok</button> -->
+</div>

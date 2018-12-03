@@ -7,7 +7,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
   templateUrl: './ascending.component.html',
   styleUrls: ['./ascending.component.css']
 })
-export class AscendingComponent implements OnInit {
+export class AscendingComponent implements OnInit{
 
   numberList = [];
   oldNumberList: number[];
@@ -73,9 +73,15 @@ export class AscendingComponent implements OnInit {
 
   }
 
+
+  
 // Switching the Difficulty Level
 
   changeDifficultyLevel(levelKey) {
+    if (this.numberList.length > 0) {
+       this.resetTheOrder();
+    }
+ 
     if (levelKey === 'easy' ) {
          let numbers = [] ;
          for (let i = 0; i < 4 ; i++) {

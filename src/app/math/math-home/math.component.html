@@ -1,13 +1,22 @@
 
-<div class="math-container">
-        <button mat-button [matMenuTriggerFor]="menu">Math <mat-icon>menu</mat-icon></button>
-        <mat-menu #menu="matMenu">
-         <a routerLink="ordering"> <button mat-menu-item>Ordering </button></a>
-         <a routerLink="zero"> <button mat-menu-item> Zero </button></a>
-         <a routerLink="addition"> <button mat-menu-item> Addition </button></a>
-        </mat-menu>
-        
 
-</div>
+<mat-card>
+        <div class="math-container">
+                <!-- <button mat-button [matMenuTriggerFor]="menu">Math <mat-icon>menu</mat-icon></button>
+                <mat-menu #menu="matMenu">
+                 <a routerLink="ordering"> <button mat-menu-item>Ordering </button></a>
+                 <a routerLink="zero"> <button mat-menu-item> Zero </button></a>
+                 <a routerLink="addition"> <button mat-menu-item> Addition </button></a>
+                </mat-menu> -->
+        
+                <a routerLink="ordering"> <button  mat-raised-button>Ordering </button></a>
+                <a routerLink="zero"> <button mat-raised-button> Zero </button></a>
+                <a routerLink="addition"> <button  mat-raised-button> Addition </button></a>
+        
+        </div>
+
+
 <router-outlet > </router-outlet>
+
+</mat-card>
 
