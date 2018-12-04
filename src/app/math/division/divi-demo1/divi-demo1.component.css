@@ -1,0 +1,11 @@
+.page-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 8px;
+}

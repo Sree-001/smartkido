@@ -1,0 +1,25 @@
+<div class="page-container">
+  <div class="left">
+      <mat-form-field class="example-full-width">
+          <input type="number" matInput placeholder="Number 1"  name="userInp" [(ngModel)]="userInp" min='0'  max='{{resultArr.length}}' value="" (keyup)="verifyUserInp()">
+        </mat-form-field>
+   
+
+  </div>
+  <div class="middle">
+    <button mat-raised-button style="margin-right:8em;font-size: 2em" title="subtract" (click)="popItems()"> - </button>     
+    <button mat-raised-button mat-fab color="primary" style="margin-right:-1em;font-size:36px" > {{resultArr.length}} </button>
+    
+
+  </div>
+  <div class="left">
+      <button mat-raised-button mat-fab color="warn" (click)="generateRandom()" > <mat-icon> loop </mat-icon> </button>
+ 
+    <div class="icons-holder">
+      <div class="icons" *ngFor = "let x of resultArr">
+      <mat-icon >adb</mat-icon>       
+      </div>
+    </div>
+  
+  </div>
+</div>

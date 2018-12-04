@@ -1,0 +1,25 @@
+.demo-2-container{
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns:33% 33% 33%;
+    border:2px solid black;
+    height: 65vh;
+    border-radius: 8px ;
+    justify-content:center;
+    text-align: center;
+ }
+
+ .itemsHolder{
+     display: grid;
+     grid-template-rows: 50px;
+     grid-template-columns:20% 20% 20% 20% 20%; 
+     grid-auto-rows: 50px;
+ }
+
+ .wrapperCard{
+     height: 17em;
+     width:90%;
+     margin:auto;
+     overflow:auto;
+ }
+ 
