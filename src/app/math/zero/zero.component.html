@@ -23,7 +23,8 @@
                   class="example-list"
                   (cdkDropListDropped)="drop($event)">
                   <div class="example-box" *ngFor="let item of todo" cdkDrag>
-                      <mat-icon class="flowers">filter_vintage</mat-icon>
+                    <img src="../../../assets/background-images/small_car.png" alt="" height="40px" width="40px">
+                    <!-- <mat-icon class="flowers">filter_vintage</mat-icon> -->
                   </div>
                   
                 </div>
@@ -48,7 +49,8 @@
                   class="example-list"
                   (cdkDropListDropped)="drop($event)">
                   <div class="example-box" *ngFor="let item of done" cdkDrag>
-                      <mat-icon class="flowers">filter_vintage</mat-icon>
+                      <img src="../../../assets/background-images/small_car.png" alt="" height="40px" width="40px">
+                      <!-- <mat-icon class="flowers">filter_vintage</mat-icon> -->
                   </div>
                 </div>
                 <div class="item-count">
@@ -63,7 +65,7 @@
     </mat-tab>
     <mat-tab label="Practice"> 
           <mat-card>
-              <h3 id="practise-header" >Make <span style="font-size:32px">Box -  {{targetBox}}</span> to have      0 smiley's</h3>
+              <h3 id="practise-header" >Make <span style="font-size:32px">Box -  {{targetBox}}</span> to have      0 Car </h3>
             <div id="buttons">
                 <button mat-raised-button  style="background-color:lightgreen" (click)="checkResult()" > Check Answer </button>
                 <button mat-raised-button style="background-color:tomato"  (click)="randomize()"> Reset  </button>
@@ -82,8 +84,9 @@
                     class="practise-list"
                     (cdkDropListDropped)="drop($event)">
                     <div class="practise-box" *ngFor="let item of box1" cdkDrag>
-                        <mat-icon class="emoji">insert_emoticon</mat-icon>
-                    </div>
+                        <!-- <mat-icon class="emoji">insert_emoticon</mat-icon> -->
+                        <img src="../../../assets/background-images/small_car.png" alt="" height="40px" width="40px">
+                      </div>
                     
                     
                   </div>
@@ -106,7 +109,8 @@
                     class="practise-list"
                     (cdkDropListDropped)="drop($event)">
                     <div class="practise-box" *ngFor="let item of box2" cdkDrag>
-                        <mat-icon class="emoji">insert_emoticon</mat-icon>
+                        <!-- <mat-icon class="emoji">insert_emoticon</mat-icon> -->
+                        <img src="../../../assets/background-images/small_car.png" alt="" height="40px" width="40px">
                     </div>
                    </div>
                    <div class="correction">

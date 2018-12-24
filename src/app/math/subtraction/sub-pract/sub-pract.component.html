@@ -1,33 +1,33 @@
 <div class="practise-container">
-  <div class="difficulty-level">
-      <div class="buttons">
-       <button  mat-raised-button  (click)="levelProcessor('easy')">Easy</button>
-       <button   mat-raised-button (click)="levelProcessor('medium')">Medium</button>
-       <button    mat-raised-button (click)="levelProcessor('little-hard')">Little Hard</button>
-     </div>
-     <div class="controls">
-        <button color="primary"  mat-raised-button (click)="answerValidator()" style="margin-right: 2em;">Check Answer</button>
-        <button color="warn"    mat-raised-button (click)="reset()">Reset</button>
-     </div>
-     </div>
-<mat-card class="sum-card">
-  <div class="prob-container">
-      <div class="operator-item">
-          <p> +</p> 
-          </div>
-          <div class="item">
-            <p>{{numberOne}}</p>
-          </div>
-          <div class="item">
-              <p>{{numberTwo}}</p>
-          </div>
-          <div class="item-last">
-              <mat-form-field >
-                  <input matInput  class="resultInp" type='number'    (keyup.enter)="answerValidator()"
-                  [(ngModel)]="result" name="result" required>
-                </mat-form-field>
-              <!-- <input type="number" name="result" [(ngModel)]="result" > -->
-          </div> 
-  </div>
-</mat-card>
+    <div class="difficulty-level">
+        <div class="buttons">
+         <button  mat-raised-button  (click)="levelProcessor('easy')">Easy</button>
+         <button   mat-raised-button (click)="levelProcessor('medium')">Medium</button>
+         <button    mat-raised-button (click)="levelProcessor('little-hard')">Little Hard</button>
+       </div>
+       <div class="controls">
+          <button color="primary"  mat-raised-button (click)="answerValidator()" style="margin-right: 2em;">Check Answer</button>
+          <button color="warn"    mat-raised-button (click)="reset()">Reset</button>
+       </div>
+       </div>
+  <mat-card class="sum-card">
+    <div class="prob-container">
+        <div class="operator-item">
+            <p> -</p> 
+            </div>
+            <div class="item">
+              <p>{{numberOne}}</p>
+            </div>
+            <div class="item">
+                <p>{{numberTwo}}</p>
+            </div>
+            <div class="item-last">
+                <mat-form-field >
+                    <input matInput  class="resultInp" type='number'    (keyup.enter)="answerValidator()"
+                    [(ngModel)]="result" name="result" required>
+                  </mat-form-field>
+                <!-- <input type="number" name="result" [(ngModel)]="result" > -->
+            </div> 
+    </div>
+  </mat-card>
 </div>
