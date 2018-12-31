@@ -9,3 +9,21 @@
     border: 2px solid black;
     border-radius: 8px;
 }
+
+.items-wrapper{
+    display:flex;
+    flex-direction:column;
+    height:400px;
+    overflow: scroll;
+    border:1px solid red;
+}
+
+.items-Bunch{
+ margin:0.3em;
+ border:1px solid black;
+ border-radius:3px ;   
+display:grid;
+grid-template-rows:auto;
+grid-auto-rows: auto;
+grid-template-columns:20% 20% 20% 20% 20%;
+}

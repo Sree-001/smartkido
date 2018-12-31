@@ -1,5 +1,30 @@
 <div class="page-container">
-    <div class="left"></div>
-    <div class="middle"></div>
-    <div class="left"></div>
+    <div class="left">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="1st Number" style="padding-left:0.4em"  type="number" [(ngModel)]="itemsCount" name="itemsCount"  (keyup) ="pushItems()">
+        </mat-form-field>
+        <button mat-fab color="white" style="font-size: 18px" (click)="computeResult()">X</button>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="2nd Number" style="padding-left:0.4em"  type="number"  (keyup) ="pushItemsBunch()" [(ngModel)]="itemsBunchCount" name="itemsBunchCount"  >
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="middle">
+    <div class="items-wrapper">
+     <div class="items-Bunch" *ngFor="let bunch of itemsBunch"  >
+       <div class="items"  *ngFor="let item of items " >
+        <img src="../../../assets/background-images/ice_cream.png" alt="" height="40px" width="40px">
+       </div>
+     </div>
+
+    </div>
+
+
+    </div>
+    <div class="left" style="text-align:center; font-size:84px; ">
+      <mat-form-field class="example-full-width">
+        <input matInput style="padding-left:0.4em;color:black;" title="Result"  type="number" [(ngModel)]="result" name="itemsCount"  disabled>
+      </mat-form-field>
+    </div>
   </div>
