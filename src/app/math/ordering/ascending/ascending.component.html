@@ -1,11 +1,16 @@
 <div class="page-container">
-<div class="difficulty-level">
-   <div class="buttons">
+  <div class="headLabel">
+    <h3> Sort the numbers in Ascending Order  .</h3>
+  </div>
+  <div class="difficulty-level">
+  
+  <div class="buttons">
     <button  mat-raised-button  (click)="changeDifficultyLevel('easy')">Easy</button>
     <button   mat-raised-button (click)="changeDifficultyLevel('medium')">Medium</button>
     <button    mat-raised-button (click)="changeDifficultyLevel('little-hard')">Little Hard</button>
   </div>
   </div>
+  
 <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
   <div class="example-box" id="asc-{{number}}-{{i}}" *ngFor="let number of numberList;let i = index" cdkDrag>{{number}}</div>
 </div>
