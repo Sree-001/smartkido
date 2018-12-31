@@ -21,9 +21,9 @@ import { MultDemo1Component } from './multiplication/mult-demo1/mult-demo1.compo
 import { MultDemo2Component } from './multiplication/mult-demo2/mult-demo2.component';
 import { MultPractComponent } from './multiplication/mult-pract/mult-pract.component';
 import { DivisionComponent } from './division/division.component';
-import { DiviDemo1Component } from './Division/divi-demo1/divi-demo1.component';
-import { DiviDemo2Component } from './Division/divi-demo2/divi-demo2.component';
-import { DiviPractComponent } from './Division/divi-pract/divi-pract.component';
+import { DiviDemo1Component } from './division/divi-demo1/divi-demo1.component';
+import { DiviDemo2Component } from './division/divi-demo2/divi-demo2.component';
+import { DiviPractComponent } from './division/divi-pract/divi-pract.component';
 // import{SharedModuleModule}
 @NgModule({
   declarations: [MathComponent, OrderingComponent, AscendingComponent, DescendingComponent, ZeroComponent, AdditionComponent, Demonstration1Component, Demonstration2Component, PractiseComponent, SubtractionComponent, SubDemo1Component, SubDemo2Component, SubPractComponent, MultiplicationComponent, MultDemo1Component, MultDemo2Component, MultPractComponent, DivisionComponent, DiviDemo1Component, DiviDemo2Component, DiviPractComponent],
