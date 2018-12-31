@@ -1,0 +1,81 @@
+.practise-container{
+    border:2px solid black;
+    border-radius:8px;
+    height:65vh;
+    width:98%;
+    margin:auto;
+}
+.sum-card{
+    width:35%;
+    height:17em;
+    margin:auto;
+    margin-top:0.5em;
+}
+
+.prob-container{
+    display: grid;
+    width: 100%;
+    height:17em;
+    border:2px solid black;
+    grid-template-rows:5.5em;
+    grid-template-columns: 46% 8% 46%; 
+    grid-auto-rows:5.5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.operator-item{
+    font-size: 19px;
+    /* grid-row: span 3; */
+    /* font-size: 46px; */
+    font-weight: bold;
+}
+.item{
+    text-align: center;
+    /* padding-right: 1.5em; */
+    font-size: 2em;
+    letter-spacing: 1.25em;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-height: 6.4em;
+}
+.item-last{
+    font-size: 2em;
+    border-top:2px solid black;
+    /* border-radius: 0.2em; */
+    grid-column: 1/-1;
+    letter-spacing: 1.25em;
+    font-weight: bold;
+    box-sizing: border-box;
+    /* max-height: 6.4em; */
+}
+
+.resultInp{
+    /* margin-left:1.3em; */
+    letter-spacing: 0.5em;
+    font-weight: bold;
+}
+
+.difficulty-level{
+    width:90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-top:1em;
+    margin-bottom:0em;
+  }
+
+  .buttons{
+    display: flex;
+    width:44%;
+    margin-left: -1.5em;
+    justify-content: space-evenly;
+  }
+
+  .controls{
+      width:58%;
+      display: flex;
+      justify-content: flex-end;
+  }
